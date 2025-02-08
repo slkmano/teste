@@ -1,0 +1,14 @@
+import sympy as sp
+
+# Definição da variável
+x = sp.Symbol('x')
+
+# Definição da função a ser integrada
+f = (2 + x) / sp.sqrt(2*x - 4)
+
+# Cálculo da integral definida de 50 a 100
+integral_definida = sp.integrate(f, (x, 50, 100))
+
+# Arredondando para 4 casas decimais
+resultado = round(float(integral_definida), 4)
+resultado
